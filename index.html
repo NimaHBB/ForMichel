@@ -56,13 +56,25 @@
         margin-left: 300px;
       }
       button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
         background-color: #dbdbdb;
         color: rgb(0, 0, 0);
         border-radius: 20px;
         border-color: transparent;
         height: 50px;
         margin-bottom: 10px;
+        padding-left: 15px;
         text-align: left;
+      }
+      button .ico {
+        position: absolute;
+        left: -14px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
       }
       button a {
         padding-left: 10px;
@@ -147,11 +159,13 @@
     <div class="Main-container">
       <div class="sidebar" id="sidebar">
         <button class="map-link" href="#" data-map=".\src\images\route1.png">
+          <img class="ico" src=".\src\images\icon1.jpeg" alt="Route 1" />
           <a class="map-link" href="#" data-map=".\src\images\route1.png"
             >Volkstriathlon + Schnuppertriathlon</a
           >
         </button>
         <button class="map-link" href="#" data-map=".\src\images\route2.png">
+          <img class="ico" src=".\src\images\icon2.jpeg" alt="Route 2" />
           <a class="map-link" href="#" data-map=".\src\images\route2.png"
             >Kindertriathlon + Familienstaffel</a
           >
